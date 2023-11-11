@@ -1,0 +1,245 @@
+.container-contact {
+  max-width: 1360px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.section-contact {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+.item {
+  display: grid;
+  gap: 60px;
+  grid-template-columns: repeat(2, 1fr);
+}
+/***********card-contact-adress*****/
+.contact-h1 {
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: left;
+  color: #323264;
+}
+.color-p-contact {
+  color: #24a3ff;
+  margin-top: 15px;
+}
+
+.fb-contact {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+  text-align: left;
+  color: #24a3ff;
+  text-transform: uppercase;
+}
+.size-fb {
+  width: 105px;
+  margin-left: 10px;
+  margin-top: 5px;
+}
+
+.fb-flex:hover .fb-contact,
+.fb-flex:hover .svg-blu path {
+  color: #f0145a;
+  fill: #f0145a;
+}
+
+.fb-flex {
+  display: flex;
+  max-width: 143px;
+}
+.hr {
+  border-top: #e6e6f0 4px solid;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+/***********card-form*****/
+.contact-h2 {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 37px;
+  text-align: left;
+  background: linear-gradient(90.13deg, #f0145a 0.84%, #ef8080 99.96%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.card-form {
+  display: flex;
+  flex-direction: column;
+  background: #f5f5fa;
+  border-radius: 12px;
+  padding: 30px;
+  gap: 30px;
+}
+
+.p-form {
+  padding: 15px;
+  width: 100%;
+  height: 56px;
+  border: 1px solid #ffffff;
+  border-radius: 8px;
+  font-size: large;
+  font-weight: 700;
+  color: #03033d;
+}
+.p-form:focus {
+  outline: none;
+  color: #000000;
+  border: 3px solid #24a3ff;
+}
+.modal-pointer:hover {
+  cursor: pointer;
+}
+.p-form::placeholder {
+  color: #b3b3ba;
+  font-family: Monserat, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+}
+.size-15-down {
+  margin-bottom: 15px;
+}
+.size-15-up {
+  margin-top: 15px;
+}
+.size-30-down {
+  margin-bottom: 30px;
+}
+.contact-h3 {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 17px;
+  color: #b3b3ba;
+  margin-top: 30px;
+  text-transform: uppercase;
+}
+.p-form-message {
+  padding: 15px;
+  width: 100%;
+  height: 56px;
+  border: 1px solid #ffffff;
+  border-radius: 8px;
+  color: #b3b3ba;
+  font-family: Monserat, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+}
+.button {
+  padding: 18px 30px;
+  width: 100%;
+  height: 56px;
+  background: #24a3ff;
+  box-shadow: 0px 0px 20px rgba(36, 163, 255, 0.5);
+  border-radius: 12px;
+  border-color: #24a3ff;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  color: #ffffff;
+  border: none;
+}
+.height {
+  height: 130px;
+  resize: none;
+}
+.size-nav-cont {
+  margin-right: 15px;
+  margin-bottom: 15px;
+}
+.button:hover {
+  background: #0085ff;
+  box-shadow: 0px 0px 20px rgba(36, 163, 255, 0.5);
+}
+.button:active {
+  background: #006ccf;
+  box-shadow: 0px 0px 20px rgba(36, 163, 255, 0.5);
+  border-radius: 12px;
+}
+
+.p-form-message:focus {
+  outline: none;
+  color: #000000;
+  border: 3px solid #24a3ff;
+  font-size: large;
+  font-weight: 700;
+}
+
+@media (max-width: 1005px) {
+  .grid-nav {
+    grid-template-areas:
+      "contacts"
+      "logo"
+      "nav";
+    grid-template-columns: auto;
+    grid-template-rows: 45px 57px;
+  }
+  .groop-label {
+    display: flex;
+    grid-area: contacts;
+    justify-content: flex-start;
+  }
+  .grid-nav {
+    display: grid;
+  }
+  .nav-size {
+    grid-area: nav;
+    justify-content: flex-start;
+    margin-top: 29px;
+  }
+
+  .nav-link {
+    margin-left: 0px;
+  }
+  .item {
+    display: inline;
+  }
+}
+
+@media (max-width: 880px) {
+  .nav-link {
+    margin-top: 0px;
+  }
+}
+@media (max-width: 680px) {
+  .groop-label {
+    justify-content: space-between;
+  }
+  .nav-size {
+    justify-content: flex-end;
+    grid-area: inherit;
+  }
+  .grid-nav {
+    grid-template-areas:
+      "contacts contacts"
+      "logo nav";
+  }
+  .size-nav-cont {
+    margin-right: 0px;
+    margin-bottom: 15px;
+  }
+  .nav-size {
+    grid-area: nav;
+    margin-top: 12px;
+  }
+  .section-contact {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .card-contact-adress {
+    margin-bottom: 30px;
+  }
+  .grid-nav {
+    grid-template-areas:
+      "contacts contacts"
+      "logo nav";
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+  }
+  .a-size {
+    margin-top: 20px;
+  }
+}

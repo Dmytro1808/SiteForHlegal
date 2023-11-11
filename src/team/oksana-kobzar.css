@@ -1,0 +1,172 @@
+.modal-pointer:hover {
+  cursor: pointer;
+}
+.section-team-detail {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+.container-team-detail {
+  max-width: 1360px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.img-detail {
+  height: 500px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+.h1 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 46px;
+  background: linear-gradient(90.13deg, #f0145a 0.84%, #ef8080 99.96%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.size-h1 {
+  margin-bottom: 15px;
+}
+.p-equity {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  color: #b3b3ba;
+}
+.separator-item {
+  display: block;
+  width: 6px;
+  height: 6px;
+  background: #e6e6f0;
+  margin-right: 10px;
+  margin-left: 10px;
+  border-radius: 20px;
+  margin-top: 10px;
+}
+.mail {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #24a3ff;
+  margin-top: 2px;
+}
+.mail-lin {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #24a3ff;
+  margin-top: 2px;
+}
+.hr-team {
+  border-top: #e6e6f0 4px solid;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.paragraf-item {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  color: #000000;
+}
+.paragraf-item-second {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  color: #000000;
+}
+.paragraf-item-next {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  color: #000000;
+  margin-top: 20px;
+}
+.wrap {
+  display: grid;
+  grid-template-columns: 400px auto;
+  column-gap: 60px;
+}
+.h2-team {
+  color: #323264;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  text-transform: uppercase;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+.size-nav-cont {
+  margin-right: 15px;
+}
+.menu {
+  display: flex;
+}
+.img-div {
+  grid-row: 1/3;
+}
+@media (max-width: 1150px) {
+  .wrap {
+    display: grid;
+    grid-template-columns: 300px auto;
+  }
+  .img-detail {
+    height: 375px;
+    max-width: 300px;
+  }
+
+  .menu {
+    display: grid;
+  }
+  .separator-item {
+    display: none;
+  }
+  .mail {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .mail-lin {
+    margin-top: 0px;
+  }
+}
+@media (max-width: 930px) {
+  .paragraf-hr {
+    grid-column: 1/3;
+  }
+  .wrap {
+    gap: 30px;
+  }
+  .img-div {
+    grid-row: 1/2;
+  }
+  .hr-team {
+    margin-top: 0px;
+  }
+  .wrap {
+    align-items: center;
+  }
+}
+@media (max-width: 680px) {
+  .section-team-detail {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .foto-paragraf {
+    grid-column: 1/3;
+  }
+  .wrap {
+    display: block;
+    gap: 0px;
+  }
+  .size-h1 {
+    margin-top: 30px;
+  }
+  .hr-team {
+    margin-top: 30px;
+  }
+  .img-detail {
+    max-width: 100%;
+  }
+  .a-size {
+    margin-top: 20px;
+  }
+}
